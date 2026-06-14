@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunday Olofinniyi | Portfolio</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+:root{
+    --primary:#0d6efd;
+    --dark:#0b1220;
+    --light:#f8f9fa;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+}
+
+.navbar{
+    background:#fff;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(135deg,#0d6efd,#071b52);
+    color:white;
+}
+
+.hero img{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid rgba(255,255,255,.2);
+}
+
+.section-title{
+    font-weight:700;
+    margin-bottom:20px;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:70px;
+    height:4px;
+    background:var(--primary);
+    display:block;
+    margin-top:10px;
+}
+
+.skill-card,
+.project-card,
+.cert-card{
+    border:none;
+    transition:.3s;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.skill-card:hover,
+.project-card:hover,
+.cert-card:hover{
+    transform:translateY(-8px);
+}
+
+.counter{
+    font-size:40px;
+    font-weight:bold;
+    color:var(--primary);
+}
+
+.contact-section{
+    background:#f7f9fc;
+}
+
+footer{
+    background:var(--dark);
+    color:white;
+    padding:20px;
+}
+
+.social-icons a{
+    color:white;
+    margin:0 10px;
+    font-size:22px;
+}
+
+.btn-custom{
+    background:white;
+    color:#0d6efd;
+    font-weight:bold;
+}
+
+.btn-custom:hover{
+    background:#e9ecef;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+<a class="navbar-brand fw-bold" href="#">
+Sunday Olofinniyi
+</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+<div class="container">
+<div class="row align-items-center">
+
+<div class="col-lg-6 text-center text-lg-start">
+<h1 class="display-4 fw-bold">
+Hello, I'm Sunday Olofinniyi
+</h1>
+
+<h3 class="mb-4">
+IT Support Specialist | Network Administrator |
+Cybersecurity Enthusiast
+</h3>
+
+<p class="lead">
+Passionate about technology, networking,
+cybersecurity, digital literacy, and building
+innovative solutions that create impact.
+</p>
+
+<a href="#contact" class="btn btn-custom btn-lg me-2">
+Hire Me
+</a>
+
+<a href="cv.pdf" class="btn btn-outline-light btn-lg">
+Download CV
+</a>
+
+</div>
+
+<div class="col-lg-6 text-center mt-5 mt-lg-0">
+<img src="profile.jpg" alt="Profile">
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="py-5">
+<div class="container">
+
+<h2 class="section-title">
+About Me
+</h2>
+
+<p>
+I am an IT professional with expertise in
+Networking, Technical Support, Cybersecurity,
+Data Analysis, and Web Development.
+I also lead technology initiatives through
+SmizeTech and participate in Digital Literacy
+Community Development Projects.
+</p>
+
+<div class="row text-center mt-5">
+
+<div class="col-md-4">
+<div class="counter" data-target="50">0</div>
+<p>Projects Completed</p>
+</div>
+
+<div class="col-md-4">
+<div class="counter" data-target="20">0</div>
+<p>Clients Served</p>
+</div>
+
+<div class="col-md-4">
+<div class="counter" data-target="10">0</div>
+<p>Certifications</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills" class="py-5 bg-light">
+<div class="container">
+
+<h2 class="section-title">
+Technical Skills
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+<div class="card skill-card p-4 text-center">
+<i class="fas fa-network-wired fa-3x text-primary"></i>
+<h5 class="mt-3">Networking</h5>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card skill-card p-4 text-center">
+<i class="fas fa-shield-halved fa-3x text-primary"></i>
+<h5 class="mt-3">Cybersecurity</h5>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card skill-card p-4 text-center">
+<i class="fas fa-chart-line fa-3x text-primary"></i>
+<h5 class="mt-3">Data Analysis</h5>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card skill-card p-4 text-center">
+<i class="fas fa-code fa-3x text-primary"></i>
+<h5 class="mt-3">Web Development</h5>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects" class="py-5">
+<div class="container">
+
+<h2 class="section-title">
+Projects
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card project-card">
+<img src="project1.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Digital Literacy Project</h5>
+<p>
+Training community members on
+essential digital skills.
+</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card project-card">
+<img src="project2.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Network Infrastructure Setup</h5>
+<p>
+Designed and deployed LAN/WAN
+solutions for organizations.
+</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card project-card">
+<img src="project3.jpg" class="card-img-top">
+<div class="card-body">
+<h5>Company Website</h5>
+<p>
+Modern responsive website with
+payment integration.
+</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CERTIFICATIONS -->
+
+<section id="certifications" class="py-5 bg-light">
+<div class="container">
+
+<h2 class="section-title">
+Certifications
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+<div class="card cert-card p-4 text-center">
+CCNA
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card cert-card p-4 text-center">
+Security+
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card cert-card p-4 text-center">
+Google Data Analytics
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card cert-card p-4 text-center">
+AWS Cloud Practitioner
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact-section py-5">
+<div class="container">
+
+<h2 class="section-title">
+Contact Me
+</h2>
+
+<div class="row">
+
+<div class="col-lg-6">
+
+<form>
+
+<input type="text"
+class="form-control mb-3"
+placeholder="Your Name">
+
+<input type="email"
+class="form-control mb-3"
+placeholder="Your Email">
+
+<textarea
+class="form-control mb-3"
+rows="5"
+placeholder="Message"></textarea>
+
+<button class="btn btn-primary">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+<div class="col-lg-6">
+
+<h5>Email</h5>
+<p>yourmail@example.com</p>
+
+<h5>Phone</h5>
+<p>+234 XXX XXX XXXX</p>
+
+<h5>Location</h5>
+<p>Nigeria</p>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+
+<footer class="text-center">
+
+<div class="social-icons mb-3">
+
+<a href="#"><i class="fab fa-linkedin"></i></a>
+
+<a href="#"><i class="fab fa-github"></i></a>
+
+<a href="#"><i class="fab fa-facebook"></i></a>
+
+<a href="#"><i class="fab fa-x-twitter"></i></a>
+
+</div>
+
+<p>
+© 2026 Sunday Olofinniyi.
+All Rights Reserved.
+</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+const counters =
+document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+
+const updateCounter = () => {
+
+const target =
++counter.getAttribute('data-target');
+
+const count =
++counter.innerText;
+
+const increment =
+target / 100;
+
+if(count < target){
+
+counter.innerText =
+Math.ceil(count + increment);
+
+setTimeout(updateCounter,20);
+
+}else{
+
+counter.innerText = target;
+
+}
+
+};
+
+updateCounter();
+
+});
+
+</script>
+
+</body>
+</html>
